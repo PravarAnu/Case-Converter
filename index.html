@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link href="./index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="title">Case Converter</div>
-    <label>
-        <textarea id="text-area"></textarea>
-    </label>
-    <div>
-        <button id="upper-case">Upper Case</button>
-        <button id="lower-case">Lower Case</button>
-        <button id="proper-case">Proper Case</button>
-        <button id="sentence-case">Sentence Case</button>
-        <button id="save-text-file">Save Text File</button>
+    <div class="case-converter">
+        <h2>Case Converter</h2>
+        <label>
+            <textarea id="text-area" rows="20" cols="50"></textarea>
+        </label>
+        <div class="buttons">
+            <button id="upper-case">Upper Case</button>
+            <button id="lower-case">Lower Case</button>
+            <button id="proper-case">Proper Case</button>
+            <button id="sentence-case">Sentence Case</button>
+            <button id="save-text-file">Save Text File</button>
+        </div>
     </div>
 
     <script src="index.js"></script>

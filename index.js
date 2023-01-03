@@ -7,7 +7,7 @@ let save = document.getElementById("save-text-file");
 let input = document.querySelector("#text-area");
 
 
-upper.addEventListener("click", function(){
+upper.addEventListener("click", function () {
     let text = input.value.toUpperCase();
     input.value = text;
     // document.getElementById("text-area").value = input.toUpperCase();
@@ -15,7 +15,7 @@ upper.addEventListener("click", function(){
     // console.log(text);
 });
 
-lower.addEventListener("click", function(){
+lower.addEventListener("click", function () {
     let text = input.value.toLowerCase();
     input.value = text;
     // document.getElementById("text-area").value = input.toUpperCase();
@@ -23,9 +23,9 @@ lower.addEventListener("click", function(){
     // console.log(text);
 });
 
-proper.addEventListener("click", function(){
+proper.addEventListener("click", function () {
     let str = input.value.toLowerCase();
-    str  = str.split(' ');
+    str = str.split(' ');
     for (let i = 0; i < str.length; i++) {
         str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
     }
@@ -35,22 +35,22 @@ proper.addEventListener("click", function(){
     // console.log(str);
 });
 
-sentence.addEventListener('click', function() {
-   let str = input.value.toLowerCase();
+sentence.addEventListener('click', function () {
+    let str = input.value.toLowerCase();
 
-   str = str.split(". ");
+    str = str.split(". ");
 
-   for(let i = 0; i < str.length; i++){
-       str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
-   }
+    for (let i = 0; i < str.length; i++) {
+        str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+    }
 
-   str = str.join(". ");
+    str = str.join(". ");
 
-   input.value = str;
+    input.value = str;
 });
 
 
-save.addEventListener("click", function(){
+save.addEventListener("click", function () {
     function download(filename, text) {
         let element = document.createElement('a');
         element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
@@ -66,5 +66,5 @@ save.addEventListener("click", function(){
 
     // Start file download.
     let stri = document.getElementById("text-area").value;
-    download("text.txt",stri);
+    download("text.txt", stri);
 });

@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    background-color: antiquewhite;
+}
+
+h2{
+    margin: 1rem;
+}
+
+.case-converter{
+    text-align: center;
+    margin:2rem;
+}
+
+button{
+    padding: 0.5rem;
+    margin: auto;
+}
+
+.buttons{
+    display:flex;
+    gap: 0.5rem;
+    flex-flow: row wrap;
+}
+
+
+#save-text-file {
+    flex-basis: 100%;
+    background-color: black;
+    color: white;
+}
